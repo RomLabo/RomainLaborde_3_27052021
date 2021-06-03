@@ -4,7 +4,7 @@
         <title>Oh My Food - services de restauration haut de gamme - commande de repas en ligne - composez votre menu</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
         <script src="https://kit.fontawesome.com/371c3c0fc4.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
@@ -12,39 +12,39 @@
     </head>
     <body>
         <!--header-->
-        <header>
-            <div>
-                <img src="img/logo/ohmyfood@2x.svg" alt="Company's logo" />
+        <header class="header">
+            <img class="header__img" src="img/logo/ohmyfood@2x.svg" alt="Company's logo" />
+            <div class="header__location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Paris, Belleville</span>
             </div>
         </header>
 
         <!--Main-->
         <main>
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Paris, Belleville</span>
-            </div>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="#restaurant">Explorez nos restaurants</a>
-            <section>
-                <h2>Fonctionnement</h2>
-                <ol>
+            <section class="presentationSection">
+                <h1 class="presentationSection__heading">Réservez le menu qui vous convient</h1>
+                <p class="presentationSection__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <a class="presentationSection__btn" href="#restaurant">Explorez nos restaurants</a>
+            </section>
+            <section class="fonctionnementSection">
+                <h2 class="fonctionnementSection__heading">Fonctionnement</h2>
+                <ol class="fonctionnementSection__list">
                     <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
                     <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
                     <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
                 </ol>
             </section>
-            <section id="restaurant">
-                <h2>Restaurants</h2>
-                <div>
+            <section id="restaurant" class="restaurantSection">
+                <h2 class="restaurantSection__heading">Restaurants</h2>
+                <div class="restaurantSection__cards">
                     <a href="laPaletteDuGoût.html">
-                        <article>
-                            <div>
+                        <article class="cards">
+                            <div class="cards__image">
                                 <img src="img/restaurants/laPaletteDuGout.jpg" alt="image of the restaurant" />
                                 <span>Nouveau</span>
                             </div>
-                            <div>
+                            <div class="cards__footer">
                                 <div>
                                     <h3>La palette du goût</h3>
                                     <span>Ménilmontant</span>
@@ -54,12 +54,12 @@
                         </article>
                     </a>
                     <a href="laNoteEnchantée.html">
-                        <article>
-                            <div>
+                        <article class="cards">
+                            <div class="cards__image">
                                 <img src="img/restaurants/laNoteEnchantée.jpg" alt="image of the restaurant" />
                                 <span>Nouveau</span>
                             </div>
-                            <div>
+                            <div class="cards__footer">
                                 <div>
                                     <h3>La note enchantée</h3>
                                     <span>Charonne</span>
@@ -69,9 +69,11 @@
                         </article>
                     </a>
                     <a href="aLaFrançaise.html">
-                        <article>
-                            <img src="img/restaurants/aLaFrançaise.jpg" alt="image of the restaurant" />
-                            <div>
+                        <article class="cards">
+                            <div class="cards__image">
+                                <img src="img/restaurants/aLaFrançaise.jpg" alt="image of the restaurant" />
+                            </div>
+                            <div class="cards__footer">
                                 <div>
                                     <h3>À la française</h3>
                                     <span>Cité Rouge</span>
@@ -81,9 +83,11 @@
                         </article>
                     </a>
                     <a href="leDéliceDesSens.html">
-                        <article>
-                            <img src="img/restaurants/leDeliceDesSens.jpg" alt="image of the restaurant" />
-                            <div>
+                        <article class="cards">
+                            <div class="cards__image">
+                                <img src="img/restaurants/leDeliceDesSens.jpg" alt="image of the restaurant" />
+                            </div>
+                            <div class="cards__footer">
                                 <div>
                                     <h3>Le délice des sens</h3>
                                     <span>Folie-Méricourt</span>
@@ -97,9 +101,9 @@
         </main>
         
         <!--footer-->
-        <footer>
-            <h4>ohmyfood</h4>
-            <ul>
+        <footer class="footer">
+            <h4 class="footer__heading">ohmyfood</h4>
+            <ul class="footer__list">
                 <li>
                     <i class="fas fa-utensils"></i>
                     <a href="#">Proposer un restaurant</a>
