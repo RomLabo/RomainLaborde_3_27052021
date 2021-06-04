@@ -19,39 +19,106 @@ body {
   width: 50%;
 }
 
-.scetion-menu {
-  background-color: #99e2d0;
+.section-menu {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.scetion-menu__image {
+.section-menu__image {
   width: 100%;
   height: 14rem;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: -2.8rem;
 }
-.scetion-menu__heading {
+.section-menu__heading {
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 4.5rem;
-  background-color: #99e2d0;
+  background-color: #f6f6f6;
   border-radius: 2rem;
+  margin: 11.5rem 0 0 0;
 }
-.scetion-menu__heading h1 {
+.section-menu__heading h1 {
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
   font-family: "Shrikhand", cursive;
 }
-.scetion-menu__heading i {
-  font-size: 1.4rem;
+.section-menu__heading a {
   width: 2rem;
+  color: #000;
 }
-.scetion-menu__content {
+.section-menu__heading a i {
+  font-size: 1.4rem;
+}
+.section-menu__content {
   margin-top: 5rem;
-  background-color: #99e2d0;
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.section-menu__btn {
+  margin: 2% 0 10% 0;
+  background: linear-gradient(#ea73db, #9356dc);
+  box-shadow: 0.2rem 0.3rem 0.6rem #c5c5c5;
+  border: none;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 5%;
+}
+.content__heading {
+  width: 25%;
+  margin: 0 0 4% 1%;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  position: relative;
+}
+.content__heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+  height: 0.1rem;
+  width: 50%;
+  border-bottom: 0.15rem solid #99e2d0;
+}
+.content__list {
+  list-style-type: none;
+  margin: 2% 0 10% 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content__list a {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 4% 7% 4% 4%;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0.4rem 0.3rem 0.8rem #e8e8e8;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+.content__list a h3 {
+  margin: 0 0 0.2rem 0;
+}
+.content__list a i {
+  display: none;
 }
 
 .footer {
