@@ -69,7 +69,8 @@ main {
     }
     &__list {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 1rem;
         margin: 0;
         padding-left: 3%;
@@ -83,6 +84,7 @@ main {
             box-shadow: 0.1rem 0.4rem 0.6rem #e7e7e7;
             height: 4rem;
             width: 75%;
+            max-width: 200px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -121,6 +123,7 @@ main {
     &__cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 1rem;
         & a {
             text-decoration: none;
@@ -129,7 +132,8 @@ main {
     }
 }
 .cards {
-    width: 18rem;
+    width: 100%;
+    max-width: 300px;
     border-radius: 1rem;
     background-color: #fff;
     box-shadow: 0.4rem 0.4rem 0.4rem #e7e7e7;
@@ -191,8 +195,9 @@ main {
         font-weight: 500;
     }
     &__list {
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 0.5rem;
         list-style-type: none;
         color: #fff;
@@ -201,6 +206,8 @@ main {
         font-size: 0.8rem;
         font-weight: 400;
         & li {
+            width: 53%;
+            max-width: 300px;
             display: flex;
             gap: 0.5rem;
             align-items: baseline;
