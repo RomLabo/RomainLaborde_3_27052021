@@ -66,13 +66,16 @@ body {
     &__btn {
         margin: 2% 0 10% 0;
         background: linear-gradient(#ea73db, $primary-color);
-        box-shadow: 0.2rem 0.3rem 0.6rem #c5c5c5;
+        box-shadow: 0.2rem 0.4rem 0.4rem $tertiary-color;
         border: none;
         border-radius: 2rem;
         height: 3rem;
         width: 50%;
         color: #fff;
         cursor: pointer;
+        &:hover {
+            box-shadow: 0.2rem 0.4rem 0.2rem $tertiary-color;
+        }
     }
 }
 .content {
@@ -130,6 +133,9 @@ body {
     }
     & h3 {
         margin: 0 0 0.2rem 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     & strong {
         width: 15%;

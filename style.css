@@ -64,13 +64,16 @@ body {
 .section-menu__btn {
   margin: 2% 0 10% 0;
   background: linear-gradient(#ea73db, #9356dc);
-  box-shadow: 0.2rem 0.3rem 0.6rem #c5c5c5;
+  box-shadow: 0.2rem 0.4rem 0.4rem #99e2d0;
   border: none;
   border-radius: 2rem;
   height: 3rem;
   width: 50%;
   color: #fff;
   cursor: pointer;
+}
+.section-menu__btn:hover {
+  box-shadow: 0.2rem 0.4rem 0.2rem #99e2d0;
 }
 
 .content {
@@ -130,6 +133,9 @@ body {
 }
 .card h3 {
   margin: 0 0 0.2rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card strong {
   width: 15%;

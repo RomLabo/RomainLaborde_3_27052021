@@ -60,6 +60,10 @@ main {
         align-items: center;
         margin-top: 1rem;
         font-size: 0.8rem;
+        box-shadow: 0.2rem 0.4rem 0.4rem $tertiary-color;
+        &:hover {
+            box-shadow: 0.2rem 0.4rem 0.2rem $tertiary-color;
+        }
     }
 }
 .fonctionnement-section {
@@ -171,8 +175,10 @@ main {
         & i {
             font-size: 1.4rem;
             &:hover {
-                animation: weight 2s backwards;
-                transition-duration: 5s;
+                font-weight: bold;
+                color: $primary-color;
+                animation: weight 4s backwards;
+                transition-duration: 2s;
             }
         }
         & h3 {
@@ -227,15 +233,18 @@ main {
 
 @keyframes weight {
     to {
-        font-weight: bold;
-        color: $primary-color;
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.3;
     }
     50% {
-        font-weight: 500;
-        color: $primary-color;
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.7;
     }
     from {
-        font-weight: 100;
-        color: $primary-color;
+        opacity: 1;
     }
 }
