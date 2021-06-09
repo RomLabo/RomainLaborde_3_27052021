@@ -144,22 +144,25 @@ body {
         display: none;
         
     }
+    &__icon {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiary-color;
+        color: #fff;
+        width: 1%;
+        height: 100%;
+        font-size: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
 }
 li:hover .card__icon {
-    background-color: $tertiary-color;
-    color: #fff;
-    width: 1%;
-    height: 100%;
-    font-size: 1rem;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: width 1s forwards;
+    animation: width 1s forwards cubic-bezier(.24,.93,.65,1.02);
 }
 li:hover i {
-    animation: rotate 2s backwards;
+    animation: rotate 1.2s 0.15s both cubic-bezier(.04,.92,.29,1);
     display: flex;
 }
 .footer {
