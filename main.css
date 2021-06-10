@@ -82,7 +82,7 @@ main {
   padding-left: 3%;
   list-style: none;
   counter-reset: item;
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 .fonctionnement-section__list li {
   counter-increment: item;
@@ -90,14 +90,13 @@ main {
   background-color: #f6f6f6;
   box-shadow: 0.1rem 0.4rem 0.6rem #e7e7e7;
   height: 4rem;
-  width: 75%;
-  max-width: 200px;
+  width: 240px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 10%;
-  padding-right: 8%;
+  padding-left: 35px;
   font-weight: 700;
+  position: relative;
 }
 .fonctionnement-section__list li:before {
   content: counter(item);
@@ -111,7 +110,8 @@ main {
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-left: calc(12% - 25%);
+  right: 96%;
+  top: 35%;
   font-weight: 400;
   font-size: 0.9rem;
 }
@@ -167,8 +167,8 @@ main {
 }
 .cards__image span {
   position: absolute;
-  margin-left: 65%;
-  margin-top: 5%;
+  right: 12px;
+  top: 14px;
   width: 30%;
   height: 2rem;
   background-color: #99e2d0;
