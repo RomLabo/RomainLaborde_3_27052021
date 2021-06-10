@@ -15,6 +15,9 @@ body {
 .header__btn {
   color: #000;
 }
+.header__btn:hover {
+  color: #4d4d4d;
+}
 .header__image {
   width: 50%;
 }
@@ -56,6 +59,12 @@ body {
 .section-menu__heading a i {
   font-size: 1.4rem;
 }
+.section-menu__heading a i:hover {
+  font-weight: bold;
+  color: #9356dc;
+  -webkit-animation: heart 1s forwards cubic-bezier(0.55, 0.17, 0.58, 0.95);
+          animation: heart 1s forwards cubic-bezier(0.55, 0.17, 0.58, 0.95);
+}
 .section-menu__content {
   margin-top: 5rem;
   background-color: #f6f6f6;
@@ -73,6 +82,7 @@ body {
   cursor: pointer;
 }
 .section-menu__btn:hover {
+  background: #ae80e5;
   box-shadow: 0.2rem 0.4rem 0.2rem #99e2d0;
 }
 
@@ -103,6 +113,27 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.list {
+  -webkit-animation: appear 2s cubic-bezier(0.21, 1.05, 0.31, 0.92);
+          animation: appear 2s cubic-bezier(0.21, 1.05, 0.31, 0.92);
+}
+.list--1 {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+.list--2 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.list--3 {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+.list--4 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .card {
@@ -156,13 +187,13 @@ body {
   border-top-right-radius: 1rem;
 }
 
-li:hover .card__icon {
+.content__list li:hover .card__icon {
   display: flex;
   -webkit-animation: width 1s forwards cubic-bezier(0.24, 0.93, 0.65, 1.02);
           animation: width 1s forwards cubic-bezier(0.24, 0.93, 0.65, 1.02);
 }
 
-li:hover i {
+.content__list li:hover i {
   -webkit-animation: rotate 1.2s 0.15s both cubic-bezier(0.04, 0.92, 0.29, 1);
           animation: rotate 1.2s 0.15s both cubic-bezier(0.04, 0.92, 0.29, 1);
   display: flex;
@@ -197,6 +228,12 @@ li:hover i {
   gap: 0.5rem;
   align-items: baseline;
 }
+.footer__list li:hover i {
+  color: #cccccc;
+}
+.footer__list li:hover a {
+  color: #cccccc;
+}
 .footer__list a {
   text-decoration: none;
   color: #fff;
@@ -210,6 +247,25 @@ li:hover i {
   font-size: 0.5rem;
 }
 
+@-webkit-keyframes appear {
+  from {
+    transform: translateY(6rem);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(6rem);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 @-webkit-keyframes width {
   from {
     width: 1%;
@@ -218,7 +274,6 @@ li:hover i {
     width: 20%;
   }
 }
-
 @keyframes width {
   from {
     width: 1%;
@@ -241,5 +296,39 @@ li:hover i {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

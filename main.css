@@ -63,6 +63,7 @@ main {
   box-shadow: 0.2rem 0.4rem 0.4rem #99e2d0;
 }
 .presentation-section__btn:hover {
+  background: #ae80e5;
   box-shadow: 0.2rem 0.4rem 0.2rem #99e2d0;
 }
 
@@ -144,16 +145,22 @@ main {
   background-color: #fff;
   box-shadow: 0.4rem 0.4rem 0.4rem #e7e7e7;
 }
+.cards:hover {
+  box-shadow: 0.4rem 0.4rem 0.2rem #e7e7e7;
+}
 .cards__image {
   position: relative;
   width: 100%;
-  height: 9rem;
+  height: 10rem;
 }
 .cards__image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   position: absolute;
@@ -183,9 +190,8 @@ main {
 .cards__footer i:hover {
   font-weight: bold;
   color: #9356dc;
-  -webkit-animation: weight 4s backwards;
-          animation: weight 4s backwards;
-  transition-duration: 2s;
+  -webkit-animation: heart 1s forwards cubic-bezier(0.55, 0.17, 0.58, 0.95);
+          animation: heart 1s forwards cubic-bezier(0.55, 0.17, 0.58, 0.95);
 }
 .cards__footer h3 {
   font-size: 1.1rem;
@@ -225,6 +231,12 @@ main {
   gap: 0.5rem;
   align-items: baseline;
 }
+.footer__list li:hover i {
+  color: #cccccc;
+}
+.footer__list li:hover a {
+  color: #cccccc;
+}
 .footer__list a {
   text-decoration: none;
   color: #fff;
@@ -238,9 +250,9 @@ main {
   font-size: 0.5rem;
 }
 
-@-webkit-keyframes weight {
-  to {
-    opacity: 0;
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0.1;
   }
   25% {
     opacity: 0.3;
@@ -251,14 +263,14 @@ main {
   75% {
     opacity: 0.7;
   }
-  from {
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes weight {
-  to {
-    opacity: 0;
+@keyframes heart {
+  0% {
+    opacity: 0.1;
   }
   25% {
     opacity: 0.3;
@@ -269,7 +281,7 @@ main {
   75% {
     opacity: 0.7;
   }
-  from {
+  100% {
     opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */

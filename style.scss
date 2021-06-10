@@ -17,6 +17,9 @@ body {
     padding: 5%;
     &__btn {
         color: #000;
+        &:hover {
+            color: lighten($color: #000000, $amount: 30%);
+        }
     }
     &__image {
         width: 50%;
@@ -54,7 +57,12 @@ body {
             width: 2rem;
             color: #000;
             & i {
-            font-size: 1.4rem;
+                font-size: 1.4rem;
+                &:hover {
+                    font-weight: bold;
+                    color: $primary-color;
+                    animation: heart 1s forwards cubic-bezier(.55,.17,.58,.95);
+                }
             }
         }
     }
@@ -74,10 +82,12 @@ body {
         color: #fff;
         cursor: pointer;
         &:hover {
+            background: lighten($primary-color, 10%);
             box-shadow: 0.2rem 0.4rem 0.2rem $tertiary-color;
         }
     }
 }
+
 .content {
     padding: 0 5%;
     &__heading {
@@ -106,6 +116,16 @@ body {
         gap: 1rem;
     }
 }
+
+.list {
+    animation: appear 2s cubic-bezier(.21,1.05,.31,.92);
+    @for $i from 1 through 4 {
+        &--#{$i} {
+            animation-delay: 150ms * $i;
+        }
+    }    
+}
+
 .card {
     display: flex;
     align-items: center;
@@ -157,14 +177,17 @@ body {
         border-top-right-radius: 1rem;
     }
 }
-li:hover .card__icon {
+
+.content__list li:hover .card__icon {
     display: flex;
     animation: width 1s forwards cubic-bezier(.24,.93,.65,1.02);
 }
-li:hover i {
+
+.content__list li:hover i {
     animation: rotate 1.2s 0.15s both cubic-bezier(.04,.92,.29,1);
     display: flex;
 }
+
 .footer {
     background-color: #353535;
     padding: 5% 6% 9%;
@@ -191,6 +214,12 @@ li:hover i {
             display: flex;
             gap: 0.5rem;
             align-items: baseline;
+            &:hover i {
+                color: darken($color: #fff, $amount: 20%);
+            }
+            &:hover a {
+                color: darken($color: #fff, $amount: 20%);
+            }
         }
         & a {
             text-decoration: none;
@@ -198,13 +227,24 @@ li:hover i {
         }
     }
 }
+
 .size-m {
     font-size: 0.7rem;
 }
+
 .size-s {
     font-size: 0.5rem;
 }
 
+@keyframes appear {
+    from {
+        transform: translateY(6rem);
+        opacity: .2;
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 @keyframes width {
     from {
         width: 1%;
@@ -219,5 +259,22 @@ li:hover i {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+@keyframes heart {
+    0% {
+        opacity: 0.1;
+    }
+    25% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
     }
 }
