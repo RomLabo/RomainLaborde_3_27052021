@@ -1,0 +1,45 @@
+.footer {
+    background-color: #353535;
+    padding: 5% 6% 9%;
+    &__heading {
+        font-family: 'Shrikhand', cursive;
+        color: #fff;
+        margin: 0 0 1rem 0;
+        font-weight: 500;
+    }
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        list-style-type: none;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
+        font-weight: 400;
+        & li {
+            width: 53%;
+            max-width: 300px;
+            display: flex;
+            gap: 0.5rem;
+            align-items: baseline;
+            &:hover i {
+                color: darken($color: #fff, $amount: 20%);
+            }
+            &:hover a {
+                color: darken($color: #fff, $amount: 20%);
+            }
+        }
+        & a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+.size-m {
+    font-size: 0.7rem;
+}
+.size-s {
+    font-size: 0.5rem;
+}

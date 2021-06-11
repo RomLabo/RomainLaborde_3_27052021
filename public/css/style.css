@@ -85,10 +85,10 @@ main {
   font-size: 14px;
 }
 .fonctionnement-section__list li {
+  box-shadow: 0.2rem 0.3rem 0.6rem #e7e7e7;
   counter-increment: item;
   border-radius: 1.2rem;
   background-color: #f6f6f6;
-  box-shadow: 0.1rem 0.4rem 0.6rem #e7e7e7;
   height: 4rem;
   width: 240px;
   display: flex;
@@ -139,11 +139,11 @@ main {
 }
 
 .cards {
+  box-shadow: 0.2rem 0.3rem 0.6rem #e7e7e7;
   width: 100%;
   max-width: 300px;
   border-radius: 1rem;
   background-color: #fff;
-  box-shadow: 0.4rem 0.4rem 0.4rem #e7e7e7;
 }
 .cards:hover {
   box-shadow: 0.4rem 0.4rem 0.2rem #e7e7e7;
@@ -157,10 +157,8 @@ main {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 60%;
-     object-position: 50% 60%;
+  object-fit: cover;
+  object-position: 50% 60%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   position: absolute;
@@ -190,8 +188,7 @@ main {
 .cards__footer i:hover {
   font-weight: bold;
   color: #9356dc;
-  -webkit-animation: heart 1s forwards cubic-bezier(0.55, 0.17, 0.58, 0.95);
-          animation: heart 1s forwards cubic-bezier(0.55, 0.17, 0.58, 0.95);
+  animation: heart 1s forwards cubic-bezier(0.55, 0.17, 0.58, 0.95);
 }
 .cards__footer h3 {
   font-size: 1.1rem;
@@ -250,7 +247,7 @@ main {
   font-size: 0.5rem;
 }
 
-@-webkit-keyframes heart {
+@keyframes heart {
   0% {
     opacity: 0.1;
   }
@@ -268,20 +265,4 @@ main {
   }
 }
 
-@keyframes heart {
-  0% {
-    opacity: 0.1;
-  }
-  25% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
