@@ -1,5 +1,52 @@
-body {
+.footer {
+  background-color: #353535;
+  padding: 5% 6% 9%;
+}
+.footer__heading {
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+.footer__list {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style-type: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.footer__list li {
+  width: 53%;
+  max-width: 280px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+.footer__list li:hover i {
+  color: #cccccc;
+}
+.footer__list li:hover a {
+  color: #cccccc;
+}
+.footer__list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.size-m {
+  font-size: 0.7rem;
+}
+
+.size-s {
+  font-size: 0.5rem;
+}
+
+body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -10,16 +57,22 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 20%;
-  padding: 5%;
+  padding: 1rem;
 }
 .header__btn {
   color: #000;
+}
+@media screen and (min-width: 1024px) {
+  .header__btn {
+    font-size: 1.5rem;
+  }
 }
 .header__btn:hover {
   color: #4d4d4d;
 }
 .header__image {
   width: 50%;
+  max-width: 400px;
 }
 
 .section-menu {
@@ -27,7 +80,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 20% 0;
+  padding: 0 0 3rem 0;
 }
 .section-menu__image {
   width: 100%;
@@ -68,6 +121,11 @@ body {
   margin: 5rem 0 1rem 0;
   background-color: #f6f6f6;
   width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .section-menu__content {
+    width: 80%;
+  }
 }
 .section-menu__btn {
   background: linear-gradient(#ea73db, #9356dc);
@@ -180,7 +238,7 @@ body {
   text-overflow: ellipsis;
 }
 .card strong {
-  margin-right: 1rem;
+  margin-right: 5%;
 }
 .card i {
   display: none;
@@ -206,54 +264,6 @@ body {
 .content__list li:hover i {
   animation: rotate 1.2s 0.15s both cubic-bezier(0.04, 0.92, 0.29, 1);
   display: flex;
-}
-
-.footer {
-  background-color: #353535;
-  padding: 5% 6% 9%;
-}
-.footer__heading {
-  font-family: "Shrikhand", cursive;
-  color: #fff;
-  margin: 0 0 1rem 0;
-  font-weight: 500;
-}
-.footer__list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  list-style-type: none;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-.footer__list li {
-  width: 53%;
-  max-width: 300px;
-  display: flex;
-  gap: 0.5rem;
-  align-items: baseline;
-}
-.footer__list li:hover i {
-  color: #cccccc;
-}
-.footer__list li:hover a {
-  color: #cccccc;
-}
-.footer__list a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.size-m {
-  font-size: 0.7rem;
-}
-
-.size-s {
-  font-size: 0.5rem;
 }
 
 @keyframes appear {

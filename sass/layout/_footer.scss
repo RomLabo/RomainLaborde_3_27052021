@@ -20,7 +20,7 @@
         font-weight: 400;
         & li {
             width: 53%;
-            max-width: 300px;
+            max-width: 280px;
             display: flex;
             gap: 0.5rem;
             align-items: baseline;
@@ -32,8 +32,8 @@
             }
         }
         & a {
-            text-decoration: none;
             color: #fff;
+            text-decoration: none;
         }
     }
 }

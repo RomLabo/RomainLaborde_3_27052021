@@ -1,9 +1,11 @@
-$primary-color: #9356dc;
-$secondary-color: #ff79da;
-$tertiary-color: #99e2d0;
+
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layout/footer";
+
+
 
 body {
-    width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -14,15 +16,19 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 20%;
-    padding: 5%;
+    padding: 1rem;
     &__btn {
         color: #000;
+        @include desktop-only {
+            font-size: 1.5rem;
+        }
         &:hover {
             color: lighten($color: #000000, $amount: 30%);
         }
     }
     &__image {
         width: 50%;
+        max-width: 400px;
     }
 }
 
@@ -31,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 20% 0;
+    padding: 0 0 3rem 0;
     &__image {
         width: 100%;
         height: 14rem;
@@ -48,16 +54,16 @@ body {
         background-color: #f6f6f6;
         border-radius: 2rem;
         margin: 11.5rem 0 0 0;
-        & h1 {
+        h1 {
             font-size: 1.4rem;
             font-weight: 500;
             margin: 0;
             font-family: 'Shrikhand', cursive;
         }
-        & a {
+        a {
             width: 2rem;
             color: #000;
-            & i {
+            i {
                 font-size: 1.4rem;
                 &:hover {
                     font-weight: bold;
@@ -71,6 +77,9 @@ body {
         margin: 5rem 0 1rem 0;
         background-color: #f6f6f6;
         width: 100%;
+        @include desktop-only {
+            width: 80%;
+        }
     }
     &__btn {
         background: linear-gradient(#ea73db, $primary-color);
@@ -145,22 +154,22 @@ body {
         align-items: flex-end;
         width: 100%;
         padding: 4% 0 4% 4%;
-        & div {
+        div {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
     }
-    & h3 {
+    h3 {
         margin: 0 0 0.2rem 0;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-    & strong {
-        margin-right: 1rem;
+    strong {
+        margin-right: 5%;
     }
-    & i {
+    i {
         display: none;
         
     }
@@ -188,7 +197,7 @@ body {
     display: flex;
 }
 
-@import "./layout/footer";
+
 
 @keyframes appear {
     from {

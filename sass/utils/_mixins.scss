@@ -1,0 +1,9 @@
+@mixin desktop-only {
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin card-shadow {
+    box-shadow: 0.2rem 0.3rem 0.6rem #e7e7e7;
+}

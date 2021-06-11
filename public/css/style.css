@@ -1,3 +1,51 @@
+.footer {
+  background-color: #353535;
+  padding: 5% 6% 9%;
+}
+.footer__heading {
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+.footer__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style-type: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.footer__list li {
+  width: 53%;
+  max-width: 280px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+.footer__list li:hover i {
+  color: #cccccc;
+}
+.footer__list li:hover a {
+  color: #cccccc;
+}
+.footer__list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.size-m {
+  font-size: 0.7rem;
+}
+
+.size-s {
+  font-size: 0.5rem;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -10,10 +58,21 @@ body {
   align-items: center;
   width: 100%;
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .header__img {
   height: 3rem;
   padding-top: 0.5rem;
   width: 40%;
+}
+@media screen and (min-width: 1024px) {
+  .header__img {
+    width: 75%;
+  }
 }
 .header__location {
   width: 100%;
@@ -26,6 +85,12 @@ body {
   gap: 1rem;
   box-shadow: inset 0 0.15rem 0.2rem 0.1rem #d5d5d5;
 }
+@media screen and (min-width: 1024px) {
+  .header__location {
+    width: 15%;
+    height: 3.5rem;
+  }
+}
 
 main {
   width: 100%;
@@ -37,7 +102,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 5% 15%;
+  padding: 1rem 1.5rem 3rem;
 }
 .presentation-section__heading {
   font-size: 1.2rem;
@@ -50,10 +115,10 @@ main {
 }
 .presentation-section__btn {
   width: 62%;
+  max-width: 280px;
   height: 2.5rem;
   border-radius: 2rem;
   background: linear-gradient(#ea73db, #9356dc);
-  text-decoration: none;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -68,7 +133,7 @@ main {
 }
 
 .fonctionnement-section {
-  padding: 5% 5% 15%;
+  padding: 1rem 1rem 4rem;
 }
 .fonctionnement-section__heading {
   font-size: 1.2rem;
@@ -122,7 +187,7 @@ main {
 
 .restaurant-section {
   background-color: #f6f6f6;
-  padding: 5% 5% 15%;
+  padding: 1rem 1rem 4rem;
 }
 .restaurant-section__heading {
   font-size: 1.2rem;
@@ -133,7 +198,8 @@ main {
   justify-content: center;
   gap: 1rem;
 }
-.restaurant-section__cards a {
+
+a {
   text-decoration: none;
   color: #000;
 }
@@ -141,7 +207,7 @@ main {
 .cards {
   box-shadow: 0.2rem 0.3rem 0.6rem #e7e7e7;
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   border-radius: 1rem;
   background-color: #fff;
 }
@@ -197,54 +263,6 @@ main {
 .cards__footer span {
   font-size: 1rem;
   font-weight: 400;
-}
-
-.footer {
-  background-color: #353535;
-  padding: 5% 6% 9%;
-}
-.footer__heading {
-  font-family: "Shrikhand", cursive;
-  color: #fff;
-  margin: 0 0 1rem 0;
-  font-weight: 500;
-}
-.footer__list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  list-style-type: none;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-.footer__list li {
-  width: 53%;
-  max-width: 300px;
-  display: flex;
-  gap: 0.5rem;
-  align-items: baseline;
-}
-.footer__list li:hover i {
-  color: #cccccc;
-}
-.footer__list li:hover a {
-  color: #cccccc;
-}
-.footer__list a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.size-m {
-  font-size: 0.7rem;
-}
-
-.size-s {
-  font-size: 0.5rem;
 }
 
 @keyframes heart {
