@@ -4,6 +4,6 @@
     }
 }
 
-@mixin card-shadow {
-    box-shadow: 0.2rem 0.3rem 0.6rem #e7e7e7;
+@mixin box-shadow($color: $card-shadow-color, $shadow-size: $card-shadow-size, $shadow-blur: $card-shadow-blur) {
+    box-shadow: $shadow-size $shadow-size $shadow-blur $color;
 }

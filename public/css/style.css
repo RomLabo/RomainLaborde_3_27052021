@@ -1,6 +1,6 @@
 .footer {
   background-color: #353535;
-  padding: 5% 6% 9%;
+  padding: 1rem 1.5rem 3rem;
 }
 .footer__heading {
   font-family: "Shrikhand", cursive;
@@ -21,7 +21,7 @@
   font-weight: 400;
 }
 .footer__list li {
-  width: 53%;
+  width: 55%;
   max-width: 280px;
   display: flex;
   gap: 0.5rem;
@@ -58,21 +58,10 @@ body {
   align-items: center;
   width: 100%;
 }
-@media screen and (min-width: 1024px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 .header__img {
   height: 3rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0 0.5rem 0;
   width: 40%;
-}
-@media screen and (min-width: 1024px) {
-  .header__img {
-    width: 75%;
-  }
 }
 .header__location {
   width: 100%;
@@ -84,12 +73,6 @@ body {
   justify-content: center;
   gap: 1rem;
   box-shadow: inset 0 0.15rem 0.2rem 0.1rem #d5d5d5;
-}
-@media screen and (min-width: 1024px) {
-  .header__location {
-    width: 15%;
-    height: 3.5rem;
-  }
 }
 
 main {
@@ -125,11 +108,11 @@ main {
   align-items: center;
   margin-top: 1rem;
   font-size: 0.8rem;
-  box-shadow: 0.2rem 0.4rem 0.4rem #99e2d0;
+  box-shadow: 0.2rem 0.2rem 0.6rem #c5c5c5;
 }
 .presentation-section__btn:hover {
   background: #ae80e5;
-  box-shadow: 0.2rem 0.4rem 0.2rem #99e2d0;
+  box-shadow: 0.2rem 0.2rem 0.2rem #c5c5c5;
 }
 
 .fonctionnement-section {
@@ -150,7 +133,7 @@ main {
   font-size: 14px;
 }
 .fonctionnement-section__list li {
-  box-shadow: 0.2rem 0.3rem 0.6rem #e7e7e7;
+  box-shadow: 0.2rem 0.2rem 0.6rem #e5e5e5;
   counter-increment: item;
   border-radius: 1.2rem;
   background-color: #f6f6f6;
@@ -205,14 +188,14 @@ a {
 }
 
 .cards {
-  box-shadow: 0.2rem 0.3rem 0.6rem #e7e7e7;
+  box-shadow: 0.2rem 0.2rem 0.6rem #e5e5e5;
   width: 100%;
   max-width: 280px;
   border-radius: 1rem;
   background-color: #fff;
 }
 .cards:hover {
-  box-shadow: 0.4rem 0.4rem 0.2rem #e7e7e7;
+  box-shadow: 0.2rem 0.2rem 0.2rem #e5e5e5;
 }
 .cards__image {
   position: relative;

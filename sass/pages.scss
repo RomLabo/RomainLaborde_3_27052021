@@ -17,6 +17,9 @@ body {
     align-items: center;
     gap: 20%;
     padding: 1rem;
+    @include desktop-only {
+        gap: 32%;
+    }
     &__btn {
         color: #000;
         @include desktop-only {
@@ -28,7 +31,7 @@ body {
     }
     &__image {
         width: 50%;
-        max-width: 400px;
+        max-width: 280px;
     }
 }
 
@@ -83,11 +86,12 @@ body {
     }
     &__btn {
         background: linear-gradient(#ea73db, $primary-color);
-        box-shadow: 0.2rem 0.4rem 0.4rem $tertiary-color;
+        @include box-shadow($btn-shadow-color);
         border: none;
         border-radius: 2rem;
         height: 3rem;
         width: 50%;
+        max-width: 280px;
         color: #fff;
         cursor: pointer;
         &:hover {
@@ -136,12 +140,12 @@ body {
 }
 
 .card {
+    @include box-shadow;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 1rem;
     background-color: #fff;
-    box-shadow: 0.4rem 0.3rem 0.8rem #e8e8e8;
     font-size: 0.75rem;
     font-weight: 400;
     text-decoration: none;
