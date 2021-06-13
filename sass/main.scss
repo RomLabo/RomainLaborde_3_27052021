@@ -89,11 +89,8 @@ main {
         font-size: 14px;
         li {
             @include box-shadow;
+            @include card-style(fonctionnement-cards);
             counter-increment: item;
-            border-radius: 1.2rem;
-            background-color: #f6f6f6;
-            height: 4rem;
-            width: 240px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -143,10 +140,7 @@ a {
 }
 .cards {
     @include box-shadow;
-    width: 100%;
-    max-width: 280px;
-    border-radius: 1rem;
-    background-color: #fff;
+    @include card-style(restaurant-cards);
     &:hover {
         @include box-shadow($shadow-blur:0.2rem)
     }
@@ -184,7 +178,7 @@ a {
         align-items: center;
         padding: 5%;
         i {
-            font-size: map-get($font-size, icon);
+            font-size: map-get($font-size, icon-xl);
             &:hover {
                 font-weight: bold;
                 color: $primary-color;

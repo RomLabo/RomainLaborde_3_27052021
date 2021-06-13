@@ -38,8 +38,8 @@
     }
 }
 .size-m {
-    font-size: 0.7rem;
+    font-size: map-get($font-size, icon-m);
 }
 .size-s {
-    font-size: 0.5rem;
+    font-size: map-get($font-size, icon-s);
 }

@@ -134,11 +134,11 @@ main {
 }
 .fonctionnement-section__list li {
   box-shadow: 0.2rem 0.2rem 0.6rem #e5e5e5;
-  counter-increment: item;
+  width: 240px;
+  height: 4rem;
   border-radius: 1.2rem;
   background-color: #f6f6f6;
-  height: 4rem;
-  width: 240px;
+  counter-increment: item;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -190,7 +190,7 @@ a {
 .cards {
   box-shadow: 0.2rem 0.2rem 0.6rem #e5e5e5;
   width: 100%;
-  max-width: 280px;
+  height: 14rem;
   border-radius: 1rem;
   background-color: #fff;
 }
