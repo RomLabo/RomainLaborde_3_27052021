@@ -19,7 +19,8 @@ a {
     @include box-shadow;
     @include card-style(restaurant-cards);
     &:hover {
-        @include box-shadow($shadow-blur:0.2rem)
+        @include box-shadow($shadow-blur:0.2rem);
+        filter: saturate(50%);
     }
     &__image {
         position: relative;

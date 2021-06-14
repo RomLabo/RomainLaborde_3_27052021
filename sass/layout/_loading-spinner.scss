@@ -1,0 +1,76 @@
+.load-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: $tertiary-color;
+    animation: load 4s 1s both;
+    position: fixed;
+    opacity: 0.9;
+    &__oh {
+        overflow: hidden;
+        width: 3rem;
+        animation: move 900ms 100ms;
+        animation-iteration-count: 4;
+        animation-timing-function: ease-out;
+    }
+    &__my {
+        overflow: hidden; 
+        width: 3.6rem;
+        animation: move 900ms 200ms;
+        animation-iteration-count: 4;
+        animation-timing-function: ease-out;
+        img {
+            object-position: -50px ;
+        }
+    }
+    &__food {
+        overflow: hidden;
+        width: 5.5rem;
+        animation: move 900ms 300ms;
+        animation-iteration-count: 4;
+        animation-timing-function: ease-out;
+        img {
+            object-position: -108px;
+        }
+    }
+}
+ 
+@keyframes load {
+    0% {
+        opacity: 1;
+        z-index: 10000;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+ 
+@keyframes move {
+    0% {
+       transform: translateY(0);
+       opacity: 0.2;
+    }
+    25%{
+       transform: translateY(7px);
+       opacity: 0.5;
+    }
+    50% {
+       transform: translateY(10px);
+       opacity: 1;
+    }
+    75% {
+       transform: translateY(-7px);
+       opacity: 0.5;
+    }
+    100% {
+       transform: translateY(0);
+       opacity: 0.2;
+    }
+}

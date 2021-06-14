@@ -4,6 +4,81 @@ body {
   font-weight: 500;
 }
 
+.load-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: #99e2d0;
+  animation: load 4s 1s both;
+  position: fixed;
+  opacity: 0.9;
+}
+.load-spinner__oh {
+  overflow: hidden;
+  width: 3rem;
+  animation: move 900ms 100ms;
+  animation-iteration-count: 4;
+  animation-timing-function: ease-out;
+}
+.load-spinner__my {
+  overflow: hidden;
+  width: 3.6rem;
+  animation: move 900ms 200ms;
+  animation-iteration-count: 4;
+  animation-timing-function: ease-out;
+}
+.load-spinner__my img {
+  object-position: -50px;
+}
+.load-spinner__food {
+  overflow: hidden;
+  width: 5.5rem;
+  animation: move 900ms 300ms;
+  animation-iteration-count: 4;
+  animation-timing-function: ease-out;
+}
+.load-spinner__food img {
+  object-position: -108px;
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+    z-index: 10000;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+    opacity: 0.2;
+  }
+  25% {
+    transform: translateY(7px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-7px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.2;
+  }
+}
 .footer {
   background-color: #353535;
   padding: 1rem 1.5rem 3rem;
@@ -13,6 +88,11 @@ body {
   color: #fff;
   margin: 0 0 1rem 0;
   font-weight: 500;
+}
+@media screen and (min-width: 1024px) {
+  .footer__heading {
+    font-size: 1.2rem;
+  }
 }
 .footer__list {
   width: 100%;
@@ -25,6 +105,11 @@ body {
   padding: 0;
   font-size: 0.8rem;
   font-weight: 400;
+}
+@media screen and (min-width: 1024px) {
+  .footer__list {
+    font-size: 0.9rem;
+  }
 }
 .footer__list li {
   width: 55%;
@@ -50,6 +135,11 @@ body {
 
 .size-s {
   font-size: 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .size-s {
+    font-size: 0.7rem;
+  }
 }
 
 @keyframes heart {
@@ -209,6 +299,7 @@ a {
 }
 .cards:hover {
   box-shadow: 0.2rem 0.2rem 0.2rem #e5e5e5;
+  filter: saturate(50%);
 }
 .cards__image {
   position: relative;
