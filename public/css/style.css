@@ -1,3 +1,16 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
 @keyframes load {
   0% {
     opacity: 0.9;
@@ -39,7 +52,7 @@
     width: 0;
   }
   to {
-    width: 65px;
+    width: 20%;
   }
 }
 @keyframes rotate {
@@ -67,16 +80,6 @@
     opacity: 1;
   }
 }
-@font-face {
-  font-family: "Shrikhand";
-  src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
-}
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
 .load {
   display: flex;
   justify-content: center;
@@ -245,7 +248,7 @@ body {
 }
 .presentation-section__btn:hover {
   background: #ae80e5;
-  box-shadow: 0.2rem 0.2rem 0.2rem #c5c5c5;
+  box-shadow: 0.4rem 0.4rem 0.6rem #c5c5c5;
 }
 
 .fonctionnement-section {
@@ -328,8 +331,7 @@ a {
   background-color: #fff;
 }
 .cards:hover {
-  box-shadow: 0.2rem 0.2rem 0.2rem #e5e5e5;
-  filter: saturate(50%);
+  filter: brightness(110%);
 }
 .cards__image {
   position: relative;

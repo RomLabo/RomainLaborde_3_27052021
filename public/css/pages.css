@@ -1,3 +1,16 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
 @keyframes load {
   0% {
     opacity: 0.9;
@@ -39,7 +52,7 @@
     width: 0;
   }
   to {
-    width: 65px;
+    width: 20%;
   }
 }
 @keyframes rotate {
@@ -67,16 +80,6 @@
     opacity: 1;
   }
 }
-@font-face {
-  font-family: "Shrikhand";
-  src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
-}
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
 .footer {
   background-color: #353535;
   padding: 1rem 1.5rem 3rem;
@@ -233,7 +236,7 @@ body {
 }
 .section-menu__btn:hover {
   background: #ae80e5;
-  box-shadow: 0.2rem 0.4rem 0.2rem #99e2d0;
+  box-shadow: 0.4rem 0.4rem 0.6rem #c5c5c5;
 }
 
 .content {
@@ -346,6 +349,7 @@ body {
   background-color: #99e2d0;
   color: #fff;
   width: 0;
+  max-width: 70px;
   height: 100%;
   font-size: 1rem;
   border-bottom-right-radius: 1rem;

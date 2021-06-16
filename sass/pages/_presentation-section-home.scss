@@ -29,7 +29,7 @@
         @include box-shadow($btn-shadow-color);
         &:hover {
             background: lighten($primary-color, 10%);
-            @include box-shadow($btn-shadow-color, $shadow-blur:0.2rem)
+            @include box-shadow($btn-shadow-color, $btn-shadow-blur-hover)
         }
     }
 }

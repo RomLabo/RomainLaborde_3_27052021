@@ -59,7 +59,7 @@
         cursor: pointer;
         &:hover {
             background: lighten($primary-color, 10%);
-            box-shadow: 0.2rem 0.4rem 0.2rem $tertiary-color;
+            @include box-shadow($btn-shadow-color, $btn-shadow-blur-hover);
         }
     }
 }
@@ -146,6 +146,7 @@
         background-color: $tertiary-color;
         color: #fff;
         width: 0;
+        max-width: 70px;
         height: 100%;
         font-size: 1rem;
         border-bottom-right-radius: 1rem;
