@@ -49,6 +49,7 @@
     }
     &__btn {
         background: $btn-background;
+        font-family: $font-text;
         @include box-shadow($btn-shadow-color);
         border: none;
         border-radius: 2rem;
