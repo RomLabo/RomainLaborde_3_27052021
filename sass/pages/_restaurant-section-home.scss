@@ -18,6 +18,12 @@ a {
 .cards {
     @include box-shadow;
     @include card-style(restaurant-cards);
+    @include desktop-only {
+        width: 300px;
+    }
+    @include tablet-only {
+        width: 300px;
+    }
     &:hover {
         filter: brightness(110%);
     }
@@ -53,7 +59,7 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5%;
+        padding: 0.8rem 1.2rem 0.8rem 0.8rem;
         i {
             font-size: map-get($font-size, icon-xl);
             &:hover {

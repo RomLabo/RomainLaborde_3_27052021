@@ -99,7 +99,7 @@ body {
   overflow: inherit;
   animation: 400ms cubic-bezier(0.35, 0.3, 0.32, 0.99) 100ms 20 alternate move;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   .load__spinner {
     font-size: 4rem;
   }
@@ -139,7 +139,7 @@ body {
   margin: 0 0 1rem 0;
   font-weight: 500;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   .footer__heading {
     font-size: 1.2rem;
   }
@@ -156,7 +156,7 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   .footer__list {
     font-size: 0.9rem;
   }
@@ -186,7 +186,7 @@ body {
 .size-s {
   font-size: 0.5rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   .size-s {
     font-size: 0.7rem;
   }
@@ -325,10 +325,20 @@ a {
 
 .cards {
   box-shadow: 0.2rem 0.2rem 0.6rem #e5e5e5;
-  width: 280px;
+  width: 98%;
   height: 14rem;
   border-radius: 1rem;
   background-color: #fff;
+}
+@media screen and (min-width: 1000px) {
+  .cards {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .cards {
+    width: 300px;
+  }
 }
 .cards:hover {
   filter: brightness(110%);
@@ -365,7 +375,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5%;
+  padding: 0.8rem 1.2rem 0.8rem 0.8rem;
 }
 .cards__footer i {
   font-size: 1.4rem;
