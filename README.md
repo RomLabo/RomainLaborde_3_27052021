@@ -23,7 +23,7 @@ Chrome et Firefox.
 
   Contenu des pages
  
-Page d’accueil (x1) 
+Page d’accueil (x1)</br> 
   ● Affichage de la localisation des restaurants. À terme il sera possible de choisir sa 
   localisation pour trouver des restaurants proches d’un certain lieu. 
   ● Une courte présentation de l’entreprise. 
