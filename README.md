@@ -2,5 +2,5 @@
 
 Projet 3 du parcours développeur web de chez Openclassrooms.
 
-![] (img/ohmyfood-img.jpg)
+![] (/img/ohmyfood-img.jpg)
 
