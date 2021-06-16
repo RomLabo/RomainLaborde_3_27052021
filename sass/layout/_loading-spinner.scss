@@ -26,32 +26,5 @@
     }
 }
  
-@keyframes load {
-    0% {
-        opacity: 0.9;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-        transform: scale(0);
-    }
-}
- 
-@keyframes move {
-    0% {
-       transform: translateY(0);
-       opacity: 0.5;
-    }
-    60% {
-       transform: translateY(10px);
-       opacity: 0.7;
-    }
-    100% {
-       transform: translateY(14px);
-       opacity: 1;
-    }
-}
+
 

@@ -1,3 +1,72 @@
+@keyframes load {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  60% {
+    transform: translateY(10px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(14px);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    transform: translateY(6rem);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65px;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
@@ -57,33 +126,6 @@ body {
   animation-delay: 400ms;
 }
 
-@keyframes load {
-  0% {
-    opacity: 0.9;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0);
-  }
-}
-@keyframes move {
-  0% {
-    transform: translateY(0);
-    opacity: 0.5;
-  }
-  60% {
-    transform: translateY(10px);
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateY(14px);
-    opacity: 1;
-  }
-}
 .footer {
   background-color: #353535;
   padding: 1rem 1.5rem 3rem;
@@ -147,23 +189,6 @@ body {
   }
 }
 
-@keyframes heart {
-  0% {
-    opacity: 0.1;
-  }
-  25% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .header {
   display: flex;
   flex-direction: column;

@@ -1,36 +1,12 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./base/animations";
 @import "./layout/body";
 @import "./layout/footer";
-@import "./layout/heart-animation";
 @import "./pages/header-pages";
 @import "./pages/section-menu-pages";
 
 
 
-@keyframes appear {
-    from {
-        transform: translateY(6rem);
-        opacity: .2;
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-@keyframes width {
-    from {
-        width: 0;
-    }
-    to {
-        width: 65px;
-    }
-}
-@keyframes rotate {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+
